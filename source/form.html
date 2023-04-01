@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона - форма обратной связи</title>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -30,80 +30,121 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="visually-hidden">Добро пожаловать в Седону - небольшой городок в Аризоне</h1>
-      <section class="intro">  <!-- У секции обязательно должен быть h2? В валидаторе warning-->
-        <div class="intro__wrapper">
-          <div class="intro__image">
-            <img class="intro__slogan" src="img/intro-slogan.svg" width="282" height="214" alt="Добро пожаловать в Седону">
-          </div>
-          <div class="intro__text-block text-block">
-            <p class="text-block__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
-            <p class="text-block__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <h1 class="visually-hidden">Форма обратной связи - отзыв о городке Седона</h1>
+      <section class="intro  intro--other-page">
+        <div class="intro__wrapper  intro__wrapper--other-page">
+          <div class="intro__image  intro__image--other-page">
+            <img class="intro__slogan intro__slogan--other-page" src="img/intro-slogan-small.svg" width="229" height="39" alt="Логотип Седоны">
           </div>
         </div>
       </section>
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <div class="advantages__item  advantages__item--city  advantage advantage--primary">  <!-- Можно ли сделать так, чтобы в advantages__item--city была картинка -->
-            <h3 class="advantage__title advantage__title--primary">Настоящий городок</h3>
-            <span class="advantage__number advantage__number--primary">— №1 —</span>
-            <p class="advantage__description advantage__description--primary">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <section class="review">
+        <h2 class="visually-hidden">Оставить отзыв о путешествии в городок Седоны</h2>
+        <div class="review__wrapper">
+          <div class="review__text-block text-block">
+            <p class="text-block__title">Оставьте свой отзыв</p>
+            <p class="text-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
-          <ul class="advantages__item advantages-list">
-            <li class="advantage  advantage--has-icon">
-              <img class="advantage__icon" src="img/icon-house.svg" width="40" height="40" alt="Жилье в Седоне">
-              <h3 class="advantage__title">Жилье</h3>
-              <div class="advantage__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
-            </li>
-            <li class="advantage  advantage--has-icon">
-              <img class="advantage__icon" src="img/icon-burger.svg" width="40" height="40" alt="Еда в Седоне">
-              <h3 class="advantage__title">Еда</h3>
-              <div class="advantage__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
-            </li>
-            <li class="advantage  advantage--has-icon  icon-gift"> <!-- Мне кажется, что иконку конечно лучше добавлять через классы, но можно ли так оформить? Если да, остальные две сделаю также.-->
-              <h3 class="advantage__title">Сувениры</h3>
-              <div class="advantage__description">Не только китайского, но и местного производства!</div>
-            </li>
-          </ul>
-          <div class="advantages__item advantages__item--bridge advantage advantage--primary">
-            <h3 class="advantage__title advantage__title--primary">Там есть мост дьявола</h3>
-            <span class="advantage__number advantage__number--primary">— №2 —</span>
-            <p class="advantage__description advantage__description--primary">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          </div>
-          <ul class="advantages__item advantages__item--other advantages-list">
-            <li class="advantage advantage--has-border">
-              <h3 class="advantage__title">Небольшая площадь</h3>
-              <span class="advantage__number">— №3 —</span>
-              <p class="advantage__description">Все интересные места находятся очень близко</p>
-            </li>
-            <li class="advantage advantage--has-border">
-              <h3 class="advantage__title">Красивая дорога</h3>
-              <span class="advantage__number">— №4 —</span>
-              <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="advantage">
-              <h3 class="advantage__title">Мало туристов</h3>
-              <span class="advantage__number">— №5 —</span>
-              <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="search-housing">
-        <div class="search-housing__wrapper">
-          <h2 class="visually-hidden">Найти жилье в Седоне</h2>
-          <div class="search-housing__text-block text-block">
-            <p class="text-block__title">Заинтересовались?</p>
-            <p class="text-block__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <button class="text-block__button button"  type="button">Найти гостиницу</button>
-          </div>
-        </div>
-      </section>
-      <section class="map">
-        <div class="map__wrapper">
-          <h2 class="visually-hidden">Седона на карте</h2>
-          <img class="map__photo" src="img/map-mobile.jpg" width="320" height="350" alt="Седона на карте">
+          <form class="review__form  form" method="post" action="https://echo.htmlacademy.ru/">
+            <fieldset class="form__field-group">
+              <legend class="form__legend">Представьтесь:</legend>
+              <p class="form__label-group">
+                <label class="form__label" for="person_name">Имя*:</label>
+                <input class="form__input" type="text" id="person_name" name="person_name"  value="Пётр" placeholder="Введите имя" required>
+              </p>
+              <p class="form__label-group">
+                <label class="form__label" for="person_surname">Фамилия*:</label>
+                <input class="form__input" type="text" id="person_surname" name="person_surname"  value="Пустота" placeholder="Введите фамилию" required>
+              </p>
+              <p class="form__label-group">
+                <label class="form__label" for="person_patronymic">Отчество*:</label>
+                <input class="form__input" type="text" id="person_patronymic" name="person_patronymic"  value="Викторович" placeholder="Введите отчество">
+              </p>
+            </fieldset>
+            <fieldset class="form__field-group">
+              <legend class="form__legend">Контактная информация:</legend>
+              <p class="form__label-group">
+                <label class="form__label" for="person_phone">Контактный телефон*:</label>
+                <input class="form__input form__input--has-icon  icon-phone" type="tel" id="person_phone" name="person_phone"  placeholder="Введите телефон" required> <!-- Так ведь можно я надеюсь? -->
+              </p>
+              <p class="form__label-group">
+                <label class="form__label" for="person_email">Электронная почта*:</label>
+                <input class="form__input form__input--has-icon  icon-email" type="email" id="person_email" name="person_email"  placeholder="Введите e-mail" required>
+              </p>
+            </fieldset>
+            <fieldset class="form__field-group">
+              <legend class="form__legend">Ваше общее впечатление:</legend>
+              <ul class="form__list form-list">
+                <li class="form-list__item">
+                  <p class="form-list__label-group"> <!-- Здесь же ведь получается нельзя использовать form__label-group , всё верно? -->
+                    <input class="form-list__radio visually-hidden" type="radio" name="impression" value="positive" id="filter-positive" checked>
+                    <label class="form-list__radio-label  radio-label" for="filter-positive">Скорее положительное</label>
+                  </p>
+                </li>
+                <li class="form-list__item">
+                  <p class="form-list__label-group">
+                    <input class="form-list__radio visually-hidden" type="radio" name="impression" value="negative" id="filter-negative">
+                    <label class="form-list__radio-label  radio-label" for="filter-negative">Скорее отрицательное</label>
+                  </p>
+                </li>
+                <li class="form-list__item">
+                  <p class="form-list__label-group">
+                    <input class="form-list__radio visually-hidden" type="radio" name="impression" value="unsure" id="filter-unsure">
+                    <label class="form-list__radio-label  radio-label" for="filter-unsure">Затрудняюсь ответить</label>
+                  </p>
+                </li>
+                <!-- Можно ли сделать так, чтобы потом использовать одни стили как для чекбоксов, так и для радио-кнопок
+                   <li class="form-list__item control">
+                  <p class="form-list__label-group">
+                    <input class="control__input visually-hidden" type="radio" name="impression" value="unsure" id="filter-unsure">
+                    <label class="control__label  radio-label" for="filter-unsure">Затрудняюсь ответить</label>
+                  </p>
+                </li>
+                Если так можно, то тогда можно задать общие стили, а потом radio-label добавить свои ::before и ::after , а  checkbox-label свои?
+                -->
+              </ul>
+            </fieldset>
+            <fieldset class="form__field-group">
+              <legend class="form__legend">Посещенные достопримечательности:</legend>
+              <ul class="form__list form-list">
+                <li class="form-list__item">
+                  <p class="form-list__label-group">
+                    <input class="form-list__checkbox visually-hidden" type="checkbox" name="attractions"  value="devils-bridge" id="devils-bridge" checked>
+                    <label class="form-list__checkbox-label  checkbox-label" for="devils-bridge">Мост Дьявола</label>
+                  </p>
+                </li>
+                <li class="form-list__item">
+                  <p class="form-list__label-group">
+                    <input class="form-list__checkbox visually-hidden" type="checkbox" name="attractions"  value="mountain-bell" id="mountain-bell" checked>
+                    <label class="form-list__checkbox-label  checkbox-label" for="mountain-bell">Гора-Колокол</label>
+                  </p>
+                </li>
+                <li class="form-list__item">
+                  <p class="form-list__label-group">
+                    <input class="form-list__checkbox visually-hidden" type="checkbox" name="attractions"  value="slide-park" id="slide-park" checked>
+                    <label class="form-list__checkbox-label  checkbox-label" for="slide-park">Слайд-парк</label>
+                  </p>
+                </li>
+                <li class="form-list__item">
+                  <p class="form-list__label-group">
+                    <input class="form-list__checkbox visually-hidden" type="checkbox" name="attractions"  value="red-rocks" id="red-rocks">
+                    <label class="form-list__checkbox-label  checkbox-label" for="red-rocks">Красные скалы</label>
+                  </p>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__field-group">
+              <legend class="form__legend">Опишите свои эмоции:</legend>
+              <p class="form__label-group">
+                <label class="form__label" for="person_emotions"><span class="visually-hidden">Опишите свои эмоции:</span></label>
+                <textarea class="form__input" id="person_emotions" name="person_emotions"   placeholder="Опишите подробно все свои восторги"></textarea>
+              </p>
+            </fieldset>
+            <div class="form__button-wrapper">
+              <button class="form__button button" type="submit">Отправить отзыв</button>
+              <p class="form__note">* — обязательные поля</p>
+            </div>
+          </form>
         </div>
       </section>
     </main>
