@@ -14,16 +14,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--current">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a>Фото и видео</a>
+              <a href="catalog.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a>Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a>HTML Academy</a>
+              <a href="https://htmlacademy.ru/study" target="_blank">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -172,5 +172,23 @@
         </div>
       </div>
     </footer>
+    <section class="notification notification-error">
+      <div class="notification__wrapper">
+          <div class="notification__text-block text-block">
+            <p class="text-block__title">Что-то пошло не так</p>
+            <p class="text-block__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="text-block__button button button--ok" type="button">Ок</button>
+          </div>
+        </div>
+    </section>
+    <section class="notification notification-success">
+      <div class="notification__wrapper">
+          <div class="notification__text-block text-block">
+            <p class="text-block__title">Ваш отзыв отправлен</p>
+            <p class="text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+            <button class="text-block__button button button--error" type="button">Закрыть окно</button>
+          </div>
+        </div>
+    </section>
   </body>
 </html>
