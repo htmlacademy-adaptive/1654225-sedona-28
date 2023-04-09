@@ -2,14 +2,16 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона - форма обратной связи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
         <img src="img/main-logo.svg" alt="Логотип городка Sedona">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -57,7 +59,7 @@
                 <input class="form__input" type="text" id="person_surname" name="person_surname"  value="Пустота" placeholder="Введите фамилию" required>
               </p>
               <p class="form__label-group">
-                <label class="form__label" for="person_patronymic">Отчество*:</label>
+                <label class="form__label" for="person_patronymic">Отчество:</label>
                 <input class="form__input" type="text" id="person_patronymic" name="person_patronymic"  value="Викторович" placeholder="Введите отчество">
               </p>
             </fieldset>
@@ -65,7 +67,7 @@
               <legend class="form__legend">Контактная информация:</legend>
               <p class="form__label-group">
                 <label class="form__label" for="person_phone">Контактный телефон*:</label>
-                <input class="form__input form__input--has-icon  form__input--icon-phone" type="tel" id="person_phone" name="person_phone"  placeholder="Введите телефон" required> <!-- Так ведь можно я надеюсь? -->
+                <input class="form__input form__input--has-icon  form__input--icon-phone" type="tel" id="person_phone" name="person_phone"  placeholder="Введите телефон" required>
               </p>
               <p class="form__label-group">
                 <label class="form__label" for="person_email">Электронная почта*:</label>
@@ -184,4 +186,5 @@
         </div>
     </section>
   </body>
+  <script src="js/mobile-menu.js"></script>
 </html>

@@ -1,0 +1,77 @@
+@use "../common/variables.scss";
+
+.advantages__wrapper {
+  position: relative;
+  background-color: variables.$basic-gray;
+  counter-reset: index;
+}
+
+.advantage {
+  text-align: center;
+  background-color: variables.$basic-gray;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantage__title {
+  margin: 0 0 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.advantage__description {
+  margin: 0;
+  color: variables.$text-gray;
+}
+
+.advantage__number {
+  display: inline-block;
+  margin-bottom: 17px;
+  color: variables.$text-gray;
+}
+
+.advantage__section {
+  padding: 0 27px;
+  padding-bottom: 40px;
+}
+
+.advantage__image {
+  align-self: center;
+}
+
+.advantage--with-img {
+  margin: 0;
+  color: variables.$basic-white;
+  background-color: variables.$primary-color;
+
+  .advantage__section {
+    padding: 36px 18px 39px;
+  }
+
+  .advantage__number {
+    color: variables.$basic-white;
+  }
+
+  .advantage__description {
+    color: variables.$basic-white;
+  }
+}
+
+.advantage--bridge {
+  .advantage__section {
+    padding: 38px 18px 36px;
+  }
+}
+
+.advantage--has-border {
+  border-bottom: 1px solid #d6d6d6;
+  outline-offset: -1px;
+}
+
+.advantage--last {
+  padding: 24px 12px;
+  padding-bottom: 28px;
+}

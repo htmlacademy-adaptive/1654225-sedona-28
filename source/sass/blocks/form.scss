@@ -1,0 +1,91 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.form__field-group {
+  margin: 24px 0 48px;
+  padding: 0;
+  border: 0;
+}
+
+.form__legend {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.form__legend::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+.form__label-group {
+  margin: 0 20px;
+}
+
+.form__label {
+  display: block;
+  margin-left: 16px;
+  text-transform: uppercase;
+  color: variables.$text-gray;
+}
+
+.form__input {
+  width: 280px;
+  height: 58px;
+  background: variables.$color-field;
+  border: none;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+// Вот тут совсем не уверена, что так можно задать цвет для плейсхолдера. Но как по-другому сделать не понимаю :(
+input::placeholder,
+textarea::placeholder {
+  color: variables.$basic-black;
+  opacity: 0.3;
+}
+
+.form__controls {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.form__list {
+  @include mixins.list-reset;
+}
+
+.form__button-wrapper {
+  padding: 0 20px;
+}
+
+.form__button {
+  width: 280px;
+  padding: 16px 20px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.form__note {
+  margin: 0;
+  color: variables.$text-gray;
+  opacity: 0.6;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: right;
+}

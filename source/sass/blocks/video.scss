@@ -1,0 +1,27 @@
+.video {
+  border-top: 1px solid #e6e6e6;
+}
+
+.video__text-block {
+  padding: 0 26px;
+  padding-top: 17px;
+  padding-bottom: 38px;
+
+  .text-block__title {
+    margin-bottom: 27px;
+  }
+}
+
+.video__item {
+  position: relative;
+}
+
+.video__img {
+  margin: 0 auto;
+}
+
+.video__icon-play {
+  position: absolute;
+  top: 85px;
+  left: 159px;
+}

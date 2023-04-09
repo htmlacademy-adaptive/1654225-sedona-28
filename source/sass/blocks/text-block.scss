@@ -1,0 +1,27 @@
+@use "../common/variables.scss";
+
+.text-block {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-block__title {
+  margin: 0 0 35px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: variables.$basic-black;
+}
+
+.text-block__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: variables.$text-gray;
+}
+
+.text-block__button {
+  display: block;
+  padding: 16px 0;
+}

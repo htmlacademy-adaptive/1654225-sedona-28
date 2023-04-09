@@ -1,0 +1,19 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.advanteges {
+  position: relative;
+}
+
+.advantages__list {
+  @include mixins.list-reset;
+}
+
+.advantages__item {
+  margin: 0 20px;
+}
+
+.advantages__item--other {
+  padding: 24px 12px;
+  text-align: center;
+}

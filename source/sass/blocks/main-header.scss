@@ -1,0 +1,16 @@
+@use "../common/variables.scss";
+
+.main-header {
+  min-height: 56px;
+  background-color: variables.$basic-white;
+  position: relative;
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 185px;
+  height: 96px;
+}

@@ -1,0 +1,28 @@
+@use "../common/variables.scss";
+
+.button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: variables.$primary-color;
+  color: variables.$basic-white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: variables.$primary-hover-color;
+  }
+
+  &:active {
+    background-color: variables.$primary-active-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: variables.$primary-disabled-color;
+    cursor: default;
+  }
+}
