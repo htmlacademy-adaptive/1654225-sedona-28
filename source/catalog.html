@@ -2,14 +2,16 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона - Фото и видео</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
         <img src="img/main-logo.svg" alt="Логотип городка Sedona">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -42,7 +44,7 @@
         <h2 class="visually-hidden">Фотографии Седоны</h2>
         <div class="gallery__wrapper">
           <div class="gallery__text-block text-block">
-            <p class="text-block__title">Фото и видео</p>
+            <p class="gallery__title text-block__title">Фото и видео</p>
             <p class="text-block__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
           <ul class="gallery__list">
@@ -113,7 +115,7 @@
         <h2 class="visually-hidden">Видео Седоны</h2>
         <div class="video__wrapper">
           <div class="video__text-block text-block">
-            <p class="text-block__title">Все еще сомневаетесь?</p>
+            <p class="video__title text-block__title">Все еще сомневаетесь?</p>
             <p class="text-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video__item">
@@ -147,5 +149,6 @@
           </a>
       </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

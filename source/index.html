@@ -3,15 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
+
     <a class="main-header__logo">
       <img src="img/main-logo.svg" alt="Логотип городка Sedona">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -48,32 +51,35 @@
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <div class="advantages__item    advantage advantage--primary advantage--city">
-          <!-- тут мне  кажется, что я опять запуталась, как правильно обернуть в дивы, чтобы потом стилизовать этот блок-->
+        <div class="advantages__item    advantage advantage--with-img">
           <div class="advantage__section">
             <h3 class="advantage__title">Настоящий городок</h3>
             <span class="advantage__number">— №1 —</span>
             <p class="advantage__description ">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
+          <img class="advantage__image" src="img/photo-city.jpg" alt="Вид на город Седона." width="320" height="260">
           <ul class="advantages__list services">
             <li class="services__item  services__item--house">
               <h3 class="services__title">Жилье</h3>
-              <div class="services__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+              <p class="services__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="services__item  services__item--burger">
               <h3 class="services__title">Еда</h3>
-              <div class="services__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
+              <p class="services__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </li>
             <li class="services__item  services__item--gift">
               <h3 class="services__title">Сувениры</h3>
-              <div class="services__description">Не только китайского, но и местного производства!</div>
+              <p class="services__description">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </div>
-        <div class="advantages__item  advantage advantage--primary  advantage--bridge">
-          <h3 class="advantage__title">Там есть мост дьявола</h3>
-          <span class="advantage__number">— №2 —</span>
-          <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <div class="advantages__item  advantage advantage--with-img  advantage--bridge">
+          <div class="advantage__section">
+            <h3 class="advantage__title">Там есть мост дьявола</h3>
+            <span class="advantage__number">— №2 —</span>
+            <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <img class="advantage__image" src="img/photo-bridge.jpg" alt="Вид на мост Дьявол." width="320" height="260">
         </div>
         <div class="advantages__item advantages__item--other advantage advantage--has-border">
           <h3 class="advantage__title">Небольшая площадь</h3>
@@ -85,7 +91,7 @@
           <span class="advantage__number">— №4 —</span>
           <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
-        <div class="advantages__item advantages__item--other advantage advantage--has-border">
+        <div class="advantages__item advantages__item--other advantage advantage--has-border advantage--last">
           <h3 class="advantage__title">Мало туристов</h3>
           <span class="advantage__number">— №5 —</span>
           <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -139,6 +145,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>

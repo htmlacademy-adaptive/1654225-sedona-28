@@ -1,0 +1,89 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  display: block;
+  width: 60px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.main-nav--closed {
+  .main-nav__wrapper {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 23px;
+      height: 4px;
+      background-color: variables.$primary-color;
+      box-shadow: 0 9px 0 0 variables.$primary-color, 0 18px 0 0 variables.$primary-color;
+    }
+  }
+}
+
+.main-nav--open {
+  .main-nav__wrapper {
+    display: block;
+    position: fixed;
+  }
+
+  .main-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 16px;
+      width: 22.9px;
+      height: 4px;
+      background-color: variables.$basic-white;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.main-nav__list {
+  @include mixins.list-reset;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: variables.$primary-color;
+}
+
+.main-nav__item {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  min-width: 100%;
+  padding: 17px 0 12px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  a {
+    color: variables.$basic-white;
+  }
+}

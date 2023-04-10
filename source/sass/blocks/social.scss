@@ -1,0 +1,25 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.social__list {
+  @include mixins.list-reset;
+  display: flex;
+  margin-bottom: 30px;
+  min-width: 154px;
+  justify-content: space-between;
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+  background-color: variables.$primary-color;
+}
+
+/*
+.social__link {
+  background-color: variables.$primary-color;
+}
+
+.social__link--vkontakte {
+  background-image: url("../img/icon-vk.svg");
+}*/

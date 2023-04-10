@@ -1,0 +1,25 @@
+.notification--error {
+  padding: 45px 42px 0 42px;
+
+  .notification__description {
+    margin-bottom: 28px;
+  }
+}
+
+.notification--success {
+  padding: 39px 37px 0 37px;
+
+  .notification__description {
+    margin-bottom: 50px;
+  }
+}
+
+.notification__button {
+  margin: 0 auto 35px;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  width: calc(100% - 40px);
+  max-width: 458px;
+  margin-bottom: 20px;
+}

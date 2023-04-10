@@ -1,0 +1,31 @@
+@use "../common/variables.scss";
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 33px 18px 22px;
+  align-items: center;
+  background-color: variables.$basic-white;
+}
+
+.main-footer__slogan {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: variables.$basic-black;
+}
+
+.main-footer__copyright {
+  min-width: 129px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-footer__copyright-text {
+  color: variables.$basic-black;
+  text-transform: uppercase;
+}

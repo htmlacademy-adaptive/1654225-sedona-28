@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+@use "./common/normalize.scss";
+@use "./common/fonts.scss";
+@use "./common/variables.scss";
+@use "./common/global.scss";
+@use "./blocks/page.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/intro.scss";
+@use "./blocks/text-block.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/advatage.scss";
+@use "./blocks/services.scss";
+@use "./blocks/search-housing.scss";
+@use "./blocks/button.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/map.scss";
+@use "./blocks/gallery.scss";
+@use "./blocks/photo-card.scss";
+@use "./blocks/like.scss";
+@use "./blocks/video.scss";
+@use "./blocks/review.scss";
+@use "./blocks/form.scss";
+@use "./blocks/notification.scss";

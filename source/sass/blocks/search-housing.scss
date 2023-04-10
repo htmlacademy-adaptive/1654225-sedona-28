@@ -1,0 +1,20 @@
+.search-housing__wrapper {
+  padding: 40px 18px 49px 18px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search-housing__text-block {
+  margin: 0 auto;
+  max-width: 458px;
+
+  .text-block__title {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .text-block__description {
+    margin-bottom: 32px;
+  }
+}
