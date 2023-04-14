@@ -5,15 +5,34 @@
   position: relative;
 }
 
+.advantages__wrapper {
+  position: relative;
+  background-color: variables.$basic-gray;
+  display: grid;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .advantages__list {
   @include mixins.list-reset;
 }
 
 .advantages__item {
   margin: 0 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item--other {
   padding: 24px 12px;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 41px 33px;
+  }
 }

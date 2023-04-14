@@ -3,11 +3,54 @@
 .services {
   padding: 32px 18px 12px;
   background-color: variables.$basic-white;
+  display: grid;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .services__item {
   position: relative;
   padding: 0 0 33px 47px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.services__item--house {
+  @media (min-width: variables.$tablet-width) {
+    padding: 158px 33px 61px;
+  }
+}
+
+.services__item--burger {
+  @media (min-width: variables.$tablet-width) {
+    padding: 156px 33px 61px;
+  }
+
+  .services__description {
+    @media (min-width: variables.$tablet-width) {
+      padding: 0 17px;
+    }
+  }
+}
+
+.services__item--gift {
+  @media (min-width: variables.$tablet-width) {
+    padding: 153px 33px 61px;
+  }
+
+  .services__description {
+    @media (min-width: variables.$tablet-width) {
+      padding: 0 8px;
+    }
+  }
 }
 
 .services__title {
@@ -17,10 +60,20 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 23px;
+  }
 }
 
 .services__description {
   margin: 0;
   text-align: left;
   color: variables.$text-gray;
+
+  @media (min-width: variables.$tablet-width) {
+    text-align: center;
+  }
 }

@@ -20,20 +20,22 @@
 }
 
 .main-nav--closed {
-  .main-nav__wrapper {
-    display: none;
-  }
+  @media (max-width: variables.$mobile-width-only) {
+    .main-nav__wrapper {
+      display: none;
+    }
 
-  .main-nav__toggle {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      width: 23px;
-      height: 4px;
-      background-color: variables.$primary-color;
-      box-shadow: 0 9px 0 0 variables.$primary-color, 0 18px 0 0 variables.$primary-color;
+    .main-nav__toggle {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 23px;
+        height: 4px;
+        background-color: variables.$primary-color;
+        box-shadow: 0 9px 0 0 variables.$primary-color, 0 18px 0 0 variables.$primary-color;
+      }
     }
   }
 }
@@ -42,6 +44,7 @@
   .main-nav__wrapper {
     display: block;
     position: fixed;
+    width: 100%;
   }
 
   .main-nav__toggle {
@@ -71,6 +74,13 @@
   box-sizing: border-box;
   text-align: center;
   background-color: variables.$primary-color;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .main-nav__item {
@@ -78,12 +88,31 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  min-width: 100%;
+  width: 100%;
   padding: 17px 0 12px 0;
   text-decoration: none;
   text-transform: uppercase;
 
+  @media (min-width: variables.$tablet-width) {
+    box-sizing: border-box;
+    width: 20%;
+    padding: 18px 0 17px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   a {
     color: variables.$basic-white;
+
+    @media (min-width: variables.$tablet-width) {
+      color: variables.$basic-black;
+    }
+  }
+
+  &:nth-child(4n + 2) {
+    @media (min-width: variables.$tablet-width) {
+      margin-right: 20%;
+    }
   }
 }

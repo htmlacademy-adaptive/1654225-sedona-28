@@ -1,18 +1,48 @@
 @use "../common/mixins.scss";
+@use "../common/variables.scss";
 
 .gallery__text-block {
   padding: 37px 20px 36px 20px;
 
+  @media (min-width: variables.$tablet-width) {
+    padding: 65px  10px 80px;
+    max-width: 458px;
+    margin: 0 auto;
+  }
+
   .gallery__title {
     margin: 0 0 26px;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+      margin-bottom: 34px;
+    }
   }
 }
 
 .gallery__list {
   @include mixins.list-reset;
+
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
+  }
 }
 
 .gallery__item {
   padding: 24px 20px 25px;
   border-top: 1px solid #e5e5e5;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+    background-color: variables.$color-field;
+  }
+}
+
+.gallery__item--dark {
+  @media (min-width: variables.$tablet-width) {
+    background-color: #eaeaea;
+  }
 }
