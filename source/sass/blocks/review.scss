@@ -1,7 +1,51 @@
-.review__text-block {
-  padding: 38px 20px 51px 20px;
+@use "../common/variables.scss";
 
-  .review__title {
-    margin-bottom: 24px;
+.review__text-block {
+  padding: 38px 20px 26px 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 50px  0 108px;
+    max-width: 436px;
+    margin: 0 auto;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 111px 0 68px;
+  }
+}
+
+.review__title {
+  margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: variables.$basic-black;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.review__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: variables.$text-gray;
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 14px;
+  }
+}
+
+.review__form {
+  padding-top: 25px;
 }

@@ -23,6 +23,7 @@
   margin: 0 20px;
 
   @media (min-width: variables.$tablet-width) {
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
   }
@@ -33,6 +34,18 @@
   text-align: center;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 41px 33px;
+    padding: 42px 33px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 52px 33px;
+  }
+
+  .advantage__title {
+    padding-top: 1px;
+
+    @media (min-width: variables.$tablet-width) {
+      padding: 0 33px;
+    }
   }
 }

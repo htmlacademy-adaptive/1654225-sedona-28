@@ -43,12 +43,12 @@
       <section class="review">
         <h2 class="visually-hidden">Оставить отзыв о путешествии в городок Седоны</h2>
         <div class="review__wrapper">
-          <div class="review__text-block text-block">
-            <p class="review__title text-block__title">Оставьте свой отзыв</p>
-            <p class="text-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <div class="review__text-block">
+            <p class="review__title">Оставьте свой отзыв</p>
+            <p class="review__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="review__form  form" method="post" action="https://echo.htmlacademy.ru/">
-            <fieldset class="form__field-group">
+            <fieldset class="form__field-group  form__field-group--introducing">
               <legend class="form__legend">Представьтесь:</legend>
               <p class="form__label-group">
                 <label class="form__label" for="person_name">Имя*:</label>
@@ -74,7 +74,7 @@
                 <input class="form__input form__input--has-icon  form__input--icon-email" type="email" id="person_email" name="person_email"  placeholder="Введите e-mail" required>
               </p>
             </fieldset>
-            <fieldset class="form__field-group">
+            <fieldset class="form__field-group form__field-group--impression">
               <legend class="form__legend">Ваше общее впечатление:</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -97,7 +97,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__field-group">
+            <fieldset class="form__field-group  form__field-group--attractions">
               <legend class="form__legend">Посещенные достопримечательности:</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -126,7 +126,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__field-group">
+            <fieldset class="form__field-group form__field-group--comment">
               <legend class="form__legend">Опишите свои эмоции:</legend>
               <p class="form__label-group">
                 <label class="form__label" for="person_emotions"><span class="visually-hidden">Опишите свои эмоции:</span></label>
@@ -168,9 +168,9 @@
     <section class="notification notification--error">
       <h2 class="visually-hidden">Ваша форма не отправлена</h2>
       <div class="notification__wrapper">
-          <div class="notification__text-block text-block">
-            <p class="text-block__title">Что-то пошло не так</p>
-            <p class="notification__description text-block__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <div class="notification__text-block">
+            <p class="notification__title">Что-то пошло не так</p>
+            <p class="notification__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             <button class="notification__button button" type="button">Ок</button>
           </div>
         </div>
@@ -178,9 +178,9 @@
     <section class="notification notification--success">
       <h2 class="visually-hidden">Форма успешно отправила данные</h2>
       <div class="notification__wrapper">
-          <div class="notification__text-block text-block">
-            <p class="text-block__title">Ваш отзыв отправлен</p>
-            <p class="notification__description text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="notification__text-block">
+            <p class="notification__title">Ваш отзыв отправлен</p>
+            <p class="notification__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
             <button class="notification__button button" type="button">Закрыть окно</button>
           </div>
         </div>

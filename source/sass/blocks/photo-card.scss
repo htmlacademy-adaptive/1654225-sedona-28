@@ -1,5 +1,11 @@
 @use "../common/variables.scss";
 
+.photo-card {
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+  }
+}
+
 .photo-card__description {
   margin: 15px 0 0;
 
@@ -10,6 +16,15 @@
     margin: 0 20px;
     height: 80px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    background-color: variables.$basic-black;
+    opacity: 0.3;
+  }
 }
 
 .photo-card__title {
@@ -17,11 +32,19 @@
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$desktop-width) {
+    color: variables.$basic-white;
+  }
 }
 
 .photo-card__author {
   margin: 0 0 11px;
   color: variables.$text-gray;
+
+  @media (min-width: variables.$desktop-width) {
+    color: variables.$basic-white;
+  }
 }
 
 .photo-card__likes {
@@ -33,12 +56,17 @@
   flex-direction: row;
   align-items: end;
   cursor: pointer;
+
+  @media (min-width: variables.$desktop-width) {
+    color: variables.$basic-white;
+    opacity: 1;
+  }
 }
 
 .photo-card__image {
   display: block;
   position: relative;
-  height: 260px;
+  height: 280px;
   width: 100%;
   overflow: hidden;
   object-fit: cover;

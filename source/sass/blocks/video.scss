@@ -8,6 +8,10 @@
   @media (min-width: variables.$tablet-width) {
     padding: 52px 60px 40px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 56px 60px 82px;
+  }
 }
 
 .video__text-block {
@@ -41,13 +45,20 @@
   margin: 0 auto;
   display: block;
   position: relative;
-  height: 260px;
+  height: 177px;
   width: 100%;
+  padding: 0 20px;
   overflow: hidden;
   object-fit: cover;
 
   @media (min-width: variables.$tablet-width) {
     height: 500px;
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 800px;
+    margin: 0 auto;
   }
 }
 

@@ -96,7 +96,7 @@
   @media (min-width: variables.$tablet-width) {
     box-sizing: border-box;
     width: 20%;
-    padding: 18px 0 17px;
+    padding: 19px 0 16px;
     text-align: center;
     font-size: 14px;
     line-height: 21px;
@@ -107,12 +107,31 @@
 
     @media (min-width: variables.$tablet-width) {
       color: variables.$basic-black;
+      padding: 18px 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      @media (min-width: variables.$tablet-width) {
+        outline: none;
+        color: #81b3d2;
+        background-color: transparent;
+      }
     }
   }
 
   &:nth-child(4n + 2) {
     @media (min-width: variables.$tablet-width) {
       margin-right: 20%;
+    }
+  }
+}
+
+.main-nav__item--current {
+  @media (min-width: variables.$tablet-width) {
+    a {
+      color: variables.$menu-current-color;
     }
   }
 }

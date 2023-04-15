@@ -27,11 +27,19 @@
   @media (min-width: variables.$tablet-width) {
     padding: 158px 33px 61px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 169px 33px 61px;
+  }
 }
 
 .services__item--burger {
   @media (min-width: variables.$tablet-width) {
     padding: 156px 33px 61px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 166px 33px 73px;
   }
 
   .services__description {
@@ -46,8 +54,16 @@
     padding: 153px 33px 61px;
   }
 
+  @media (min-width: variables.$desktop-width) {
+    padding: 169px 33px 61px;
+  }
+
   .services__description {
     @media (min-width: variables.$tablet-width) {
+      padding: 0 8px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
       padding: 0 8px;
     }
   }

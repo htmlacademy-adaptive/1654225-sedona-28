@@ -5,7 +5,13 @@
   padding: 37px 20px 36px 20px;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 65px  10px 80px;
+    padding: 56px 10px 77px;
+    max-width: 458px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 97px 10px 87px;
     max-width: 458px;
     margin: 0 auto;
   }
@@ -28,6 +34,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
   }
 }
 
