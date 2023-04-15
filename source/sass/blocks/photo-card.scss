@@ -1,7 +1,30 @@
 @use "../common/variables.scss";
 
+.photo-card {
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+  }
+}
+
 .photo-card__description {
   margin: 15px 0 0;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+    height: 80px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    background-color: variables.$basic-black;
+    opacity: 0.3;
+  }
 }
 
 .photo-card__title {
@@ -9,11 +32,19 @@
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$desktop-width) {
+    color: variables.$basic-white;
+  }
 }
 
 .photo-card__author {
   margin: 0 0 11px;
   color: variables.$text-gray;
+
+  @media (min-width: variables.$desktop-width) {
+    color: variables.$basic-white;
+  }
 }
 
 .photo-card__likes {
@@ -25,4 +56,34 @@
   flex-direction: row;
   align-items: end;
   cursor: pointer;
+
+  @media (min-width: variables.$desktop-width) {
+    color: variables.$basic-white;
+    opacity: 1;
+  }
+}
+
+.photo-card__image {
+  display: block;
+  position: relative;
+  height: 280px;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 267px;
+  }
+}
+
+.photo-card--first {
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  .photo-card__image {
+    @media (min-width: variables.$tablet-width) {
+      height: 400px;
+    }
+  }
 }

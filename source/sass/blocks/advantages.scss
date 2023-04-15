@@ -5,15 +5,47 @@
   position: relative;
 }
 
+.advantages__wrapper {
+  position: relative;
+  background-color: variables.$basic-gray;
+  display: grid;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .advantages__list {
   @include mixins.list-reset;
 }
 
 .advantages__item {
   margin: 0 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item--other {
   padding: 24px 12px;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 42px 33px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 52px 33px;
+  }
+
+  .advantage__title {
+    padding-top: 1px;
+
+    @media (min-width: variables.$tablet-width) {
+      padding: 0 33px;
+    }
+  }
 }

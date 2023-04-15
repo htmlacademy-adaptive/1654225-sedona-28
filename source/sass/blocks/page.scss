@@ -2,11 +2,13 @@
 
 .page {
   height: 100%;
+  background-color: variables.$color-field;
 }
 
 .page__body {
   min-height: 100%;
   min-width: 320px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: variables.$basic-white;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -14,4 +16,7 @@
   font-weight: 400;
   line-height: 21px;
   color: variables.$basic-black;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }

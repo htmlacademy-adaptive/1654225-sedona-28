@@ -1,0 +1,9 @@
+@use "../common/variables.scss";
+
+.only-tablet {
+  display: none;
+
+  @media (min-width: variables.$mobile-width-only) {
+    display: block;
+  }
+}

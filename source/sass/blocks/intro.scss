@@ -9,21 +9,58 @@
   background-repeat: no-repeat;
   background-size: cover; //320px 389px;
   background-position: center bottom;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 77px 0 91px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 78px 0 90px 0;
+  }
+}
+
+.intro__slogan {
+  height: auto;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 461px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 459.5px;
+  }
 }
 
 .intro__text-block {
   padding: 32px 18px 51px;
+  margin: 0 auto;
+  max-width: 520px;
 
-  .text-block__title {
+  .intro__title {
     padding: 1px 13px;
   }
-}
 
+  @media (min-width: variables.$tablet-width) {
+    padding: 48px 0 57px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 60px 0 47px;
+  }
+}
 
 .intro--other-page {
   margin-top: -56px;
 
   .intro__image {
     padding: 108px 0 67px 0;
+
+    @media (min-width: variables.$tablet-width) {
+      padding: 153px 0 114px 0;
+    }
+
+    @media (min-width: variables.$tablet-width) {
+      padding: 159px 0 121px 0;
+    }
   }
 }

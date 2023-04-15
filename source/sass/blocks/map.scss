@@ -1,5 +1,20 @@
+@use "../common/variables.scss";
+
 .map__wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 8px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.map__photo {
+  display: block;
+  position: relative;
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
 }

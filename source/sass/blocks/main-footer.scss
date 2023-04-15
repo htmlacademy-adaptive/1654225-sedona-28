@@ -6,6 +6,16 @@
   padding: 33px 18px 22px;
   align-items: center;
   background-color: variables.$basic-white;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 33px 59px 22px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 34px 120px 22px;
+  }
 }
 
 .main-footer__slogan {
