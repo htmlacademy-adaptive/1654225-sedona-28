@@ -1,10 +1,25 @@
+@use "../common/variables.scss";
+
 .like__icon {
   margin-right: 14px;
-  margin-top: -2px;
   align-self: flex-start;
+  opacity: 0.3;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-right: 9px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    color: variables.$basic-white;
+    opacity: 1;
+  }
 }
 
 .like__number {
   font-weight: 700;
   line-height: 21px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 23px;
+  }
 }

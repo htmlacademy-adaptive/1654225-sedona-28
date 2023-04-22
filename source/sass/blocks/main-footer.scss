@@ -10,11 +10,11 @@
   @media (min-width: variables.$tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 33px 59px 22px;
+    padding: 36px 60px 36px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 34px 120px 22px;
+    padding: 36px 120px 22px;
   }
 }
 
@@ -25,6 +25,18 @@
   line-height: 26px;
   text-transform: uppercase;
   color: variables.$basic-black;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__social {
+  margin-bottom: 30px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-footer__copyright {

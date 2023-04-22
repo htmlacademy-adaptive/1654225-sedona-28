@@ -4,8 +4,7 @@
 .social__list {
   @include mixins.list-reset;
   display: flex;
-  margin-bottom: 30px;
-  min-width: 154px;
+  min-width: 156px;
   justify-content: space-between;
 }
 
@@ -13,6 +12,8 @@
   width: 48px;
   height: 48px;
   background-color: variables.$primary-color;
+  display: flex;
+  padding: 12px;
 }
 
 /*

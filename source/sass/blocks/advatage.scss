@@ -2,6 +2,7 @@
 
 .advantage__wrapper {
   display: grid;
+  background-color: variables.$primary-color;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: repeat(3, 1fr);
@@ -32,11 +33,6 @@
 .advantage__description {
   margin: 0;
   color: variables.$text-gray;
-
-  /*@media (min-width: variables.$tablet-width) {
-    font-size: 14px;
-    line-height: 21px;
-  }*/
 }
 
 .advantage__number {
@@ -71,33 +67,35 @@
 .advantage--with-img {
   margin: 0;
   color: variables.$basic-white;
-  background-color: variables.$primary-color;
+  background-color: variables.$basic-white;
 
   .advantage__section {
-    padding: 36px 18px 39px;
+    padding: 33px 18px 40px;
 
     @media (min-width: variables.$tablet-width) {
       padding: 50px 33px 29px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      padding: 50px 33px 29px;
+      padding: 52px 33px 29px;
+    }
+  }
 
-      .advantage__title {
-        padding: 0 61px;
-      }
+  .advantage__title {
+    @media (min-width: variables.$desktop-width) {
+      padding: 0 61px;
+    }
+  }
 
-      .advantage__description {
-        padding: 0 34px;
-      }
+  .advantage__description {
+    color: variables.$basic-white;
+
+    @media (min-width: variables.$desktop-width) {
+      padding: 0 22px;
     }
   }
 
   .advantage__number {
-    color: variables.$basic-white;
-  }
-
-  .advantage__description {
     color: variables.$basic-white;
   }
 
@@ -111,7 +109,7 @@
     padding: 38px 18px 36px;
 
     @media (min-width: variables.$tablet-width) {
-      padding: 51px 32px 30px;
+      padding: 52px 33px 29px;
       grid-column: 3/4;
       grid-row: 1/-1;
     }
@@ -125,15 +123,18 @@
 }
 
 .advantage--has-border {
-  @media (min-width: variables.$tablet-width) {
+  position: relative;
+
+  @media (max-width: variables.$mobile-width-only) {
     border-bottom: 1px solid #d6d6d6;
     outline-offset: -1px;
   }
 
   .advantage__title {
     @media (min-width: variables.$tablet-width) {
-      line-height: 26px;
-      margin-bottom: 12px;
+      line-height: 27px;
+      margin-bottom: 11px;
+      padding: 0 17px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -148,14 +149,14 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      margin-bottom: 1px;
+      margin-bottom: 0;
     }
   }
 }
 
 .advantage--last {
-  padding: 24px 12px;
-  padding-bottom: 26px;
+  padding-bottom: 28px;
+  padding-top: 26px; //без этого паддинга почему-то вообще не встаёт
 
   @media (min-width: variables.$tablet-width) {
     padding: 41px 33px;
