@@ -12,13 +12,15 @@
   color: variables.$basic-white;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: variables.$primary-hover-color;
+    outline: none;
   }
 
   &:active {
     background-color: variables.$primary-active-color;
-    color: rgba(255, 255, 255, 0.3);
+    color: transparentize(variables.$basic-white, 0.7);
   }
 
   &:disabled {

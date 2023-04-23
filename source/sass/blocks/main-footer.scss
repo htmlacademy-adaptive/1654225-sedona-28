@@ -3,7 +3,7 @@
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 33px 18px 22px;
+  padding: 33px 18px 33px;
   align-items: center;
   background-color: variables.$basic-white;
 
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 36px 120px 22px;
+    padding: 36px 120px 36px;
   }
 }
 
@@ -45,6 +45,31 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    .main-footer__copyright-text {
+      color: variables.$primary-hover-color;
+    }
+
+    .main-footer__copyright-logo path {
+      fill: variables.$primary-hover-color;
+    }
+  }
+
+  &:active {
+    outline: none;
+
+    .main-footer__copyright-text {
+      color: variables.$copyright-color-active;
+    }
+
+    .main-footer__copyright-logo path {
+      fill: variables.$copyright-color-active;
+    }
+  }
 }
 
 .main-footer__copyright-text {

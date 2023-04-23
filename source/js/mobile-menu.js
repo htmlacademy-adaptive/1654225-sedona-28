@@ -8,10 +8,3 @@ openMenuLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   menu.classList.toggle("main-nav--open");
 });
-
-/*
-modalClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    searchModal.classList.add("modal-close");
-  });
-*/

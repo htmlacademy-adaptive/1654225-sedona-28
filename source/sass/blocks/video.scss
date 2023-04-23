@@ -8,7 +8,7 @@
 
 .video__wrapper {
   @media (min-width: variables.$tablet-width) {
-    padding: 54px 60px 40px;
+    padding: 62px 60px 40px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -21,7 +21,7 @@
 
   @media (min-width: variables.$tablet-width) {
     padding: 0;
-    padding-bottom: 89px;//87px;
+    padding-bottom: 83px;//87px;
     max-width: 445px;
     margin: 0 auto;
   }
@@ -70,7 +70,8 @@
   position: absolute;
   padding: 0;
   top: 62px;
-  left: 42%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 48px;
   height: 54px;
   background-image: url("../img/icon-play.svg");
@@ -81,11 +82,9 @@
 
   @media (min-width: variables.$tablet-width) {
     top: 223px;
-    left: 46%;
   }
 
   @media (min-width: variables.$desktop-width) {
     top: 223px;
-    left: 515px;
   }
 }
