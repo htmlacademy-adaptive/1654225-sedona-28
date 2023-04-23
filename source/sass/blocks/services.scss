@@ -31,6 +31,34 @@
   @media (min-width: variables.$desktop-width) {
     padding: 169px 33px 61px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+
+    @media (min-width: variables.$tablet-width) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 58px;
+      width: 77px;
+      height: 73px;
+      background-size: 77px 73px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: 69px;
+      width: 88px;
+      height: 73px;
+      background-size: 88px 73px;
+    }
+  }
 }
 
 .services__item--burger {
@@ -39,12 +67,44 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 166px 33px 73px;
+    padding: 166px 33px 69px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+
+    @media (min-width: variables.$tablet-width) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 58px;
+      width: 80px;
+      height: 73px;
+      background-size: 80px 73px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: 72px;
+      width: 74px;
+      height: 70px;
+      background-size: 74px 70px;
+    }
   }
 
   .services__description {
     @media (min-width: variables.$tablet-width) {
       padding: 0 17px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      padding: 2px 17px;
     }
   }
 }
@@ -58,13 +118,42 @@
     padding: 169px 33px 61px;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+
+    @media (min-width: variables.$tablet-width) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 62px;
+      width: 66px;
+      height: 75px;
+      background-size: 66px 75px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: 70px;
+      width: 78px;
+      height: 75px;
+      background-image: url("../img/icon-gift-desktop.svg");
+      background-size: 78px 75px;
+    }
+  }
+
   .services__description {
     @media (min-width: variables.$tablet-width) {
       padding: 0 8px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      padding: 0 8px;
+      padding: 0 15px;
     }
   }
 }
@@ -91,5 +180,9 @@
 
   @media (min-width: variables.$tablet-width) {
     text-align: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 15px;
   }
 }

@@ -1,0 +1,23 @@
+@use "../common/variables.scss";
+
+.br-visible {
+  display: none;
+}
+
+.br-visible--mobile {
+  @media (min-width: variables.$mobile-width-only) {
+    display: block;
+  }
+}
+
+.br-visible--tablet {
+  @media (min-width: variables.$tablet-width) and (max-width: variables.$tablet-width-only) {
+    display: block;
+  }
+}
+
+.br-visible--desktop {
+  @media (min-width: variables.$desktop-width) {
+    display: block;
+  }
+}

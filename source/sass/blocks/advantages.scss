@@ -13,10 +13,29 @@
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (max-width: variables.$mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -37px;
+      left: 0;
+      width: 100%;
+      height: 37px;
+      background-image: url("../img/advanteges-triangle-mobile.svg");
+      background-color: #81b3d2;
+      background-size: 100% 37px;
+    }
+  }
 }
 
 .advantages__list {
   @include mixins.list-reset;
+
+  @media (max-width: variables.$mobile-width-only) {
+    max-width: 354px;
+    margin: 0 auto;
+  }
 }
 
 .advantages__item {
@@ -34,18 +53,16 @@
   text-align: center;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 42px 33px;
+    padding: 41px 33px;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding: 52px 33px;
   }
 
-  .advantage__title {
-    padding-top: 1px;
-
+  /*.advantage__title {
     @media (min-width: variables.$tablet-width) {
       padding: 0 33px;
     }
-  }
+  }*/
 }

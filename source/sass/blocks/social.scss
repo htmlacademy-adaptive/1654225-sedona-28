@@ -4,22 +4,29 @@
 .social__list {
   @include mixins.list-reset;
   display: flex;
-  margin-bottom: 30px;
-  min-width: 154px;
+  min-width: 156px;
   justify-content: space-between;
 }
 
 .social__item {
   width: 48px;
   height: 48px;
-  background-color: variables.$primary-color;
+  display: flex;
 }
 
-/*
 .social__link {
+  padding: 12px;
+  box-sizing: border-box;
   background-color: variables.$primary-color;
-}
 
-.social__link--vkontakte {
-  background-image: url("../img/icon-vk.svg");
-}*/
+  &:hover,
+  &:focus {
+    background-color: variables.$primary-hover-color;
+    outline: none;
+  }
+
+  &:active {
+    background-color: variables.$primary-active-color;
+    color: transparentize(variables.$basic-white, 0.7);
+  }
+}

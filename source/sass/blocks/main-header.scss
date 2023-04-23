@@ -4,6 +4,7 @@
   min-height: 56px;
   background-color: variables.$basic-white;
   position: relative;
+  z-index: 12;
 }
 
 .main-header__logo {
@@ -13,4 +14,5 @@
   transform: translate(-50%);
   width: 185px;
   height: 96px;
+  z-index: 20;
 }
