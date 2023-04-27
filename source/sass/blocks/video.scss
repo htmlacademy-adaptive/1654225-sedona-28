@@ -18,12 +18,12 @@
 
 .video__text-block {
   padding: 18px 26px 38px;
+  max-width: 445px;
+  margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
     padding: 0;
     padding-bottom: 83px;//87px;
-    max-width: 445px;
-    margin: 0 auto;
   }
 
   @media (min-width: variables.$desktop-width) {

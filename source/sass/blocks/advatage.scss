@@ -59,8 +59,14 @@
   object-fit: cover;
 
   @media (min-width: variables.$tablet-width) {
-    grid-column: 2/-1;
+    //grid-column: 2/-1;
     height: 256px;
+  }
+}
+
+.advantage__image-wrapper {
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2/-1;
   }
 }
 
@@ -115,7 +121,7 @@
     }
   }
 
-  .advantage__image {
+  .advantage__image-wrapper {
     @media (min-width: variables.$tablet-width) {
       grid-column: 1/3;
     }
