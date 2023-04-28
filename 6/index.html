@@ -65,7 +65,7 @@
             </div>
             <div class="advantage__image-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/advanteges/photo-city-desktop.jpg 1x, img/advantages/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/advanteges/photo-city-desktop.jpg 1x, img/advanteges/photo-city-desktop@2x.jpg 2x">
                 <img class="advantage__image" src="img/advanteges/photo-city.jpg" srcset="img/advanteges/photo-city@2x.jpg 2x" alt="Вид на город Седона." width="320" height="260">
               </picture>
             </div>
@@ -96,7 +96,7 @@
             </div>
             <div class="advantage__image-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/advanteges/photo-bridge-desktop.jpg 1x, img/advantages/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/advanteges/photo-bridge-desktop.jpg 1x, img/advanteges/photo-bridge-desktop@2x.jpg 2x">
                 <img class="advantage__image" src="img/advanteges/photo-bridge.jpg" srcset="img/advanteges/photo-bridge@2x.jpg 2x" alt="Вид на мост Дьявол." width="320" height="260">
               </picture>
             </div>
@@ -134,11 +134,20 @@
     <section class="map">
       <div class="map__wrapper">
         <h2 class="visually-hidden">Седона на карте</h2>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
-          <img class="map__photo" src="img/map/map-tablet.jpg" srcset="img/map/map-tablet@2x.jpg 2x" width="320" height="350" alt="Седона на карте">
-        </picture>
-      </div>
+        <div class="map__image map__image--nojs">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+            <img class="map__photo" src="img/map/map-tablet.jpg" srcset="img/map/map-tablet@2x.jpg 2x" width="320" height="350" alt="Седона на карте">
+          </picture>
+        </div>
+        <div class="map__frame map__frame--nojs">
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.136884766514!2d-111.83633822626956!3d34.854441888240736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1682180362952!5m2!1sru!2sru" width="320"
+          height="350"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Карта города Седона"></iframe>
+        </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -187,5 +196,7 @@
     </div>
   </footer>
   <script src="js/mobile-menu.js"></script>
+  <script src="js/map.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </body>
 </html>
