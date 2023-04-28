@@ -10,6 +10,71 @@
   }
 }
 
+.map__image {
+  display: none;
+}
+
+.map__image--nojs {
+  display: block;
+}
+
+.map__frame {
+  display: block;
+  width: 100%;
+  height: 350px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    background-color: variables.$basic-white;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-color: variables.$primary-color;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    z-index: 2;
+  }
+}
+
+.map__frame--nojs {
+  display: none;
+}
+
+.map__iframe {
+  position: relative;
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/map/map-desktop-beckground-frame.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map/map-desktop-beckground-frame@2x.jpg");
+  }
+}
+
 .map__photo {
   display: block;
   position: relative;

@@ -31,6 +31,14 @@
   background: none;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: variables.$tablet-width) {
     display: none;
   }
@@ -72,7 +80,7 @@
       position: absolute;
       top: 25px;
       left: 17px;
-      width: 25.9px;
+      width: 26px;
       height: 5px;
       background-color: variables.$basic-white;
     }
@@ -122,13 +130,29 @@
   font-weight: 700;
   line-height: 26px;
   width: 100%;
-  //padding: 18px 0 12px;
   text-decoration: none;
   text-transform: uppercase;
 
   @media (max-width: variables.$mobile-width-only) {
     padding: 0;
     box-shadow: inset 0 -1px 0  transparentize(variables.$basic-black, 0.8), inset 0 1px 0 transparentize(variables.$basic-white, 0.8);
+  }
+
+  &:hover,
+  &:focus {
+    @media (max-width: variables.$mobile-width-only) {
+      background-color: variables.$primary-hover-color;
+    }
+  }
+
+  &:active {
+    @media (max-width: variables.$mobile-width-only) {
+      background-color: variables.$primary-active-color;
+
+      a {
+        color: transparentize(variables.$basic-white, 0.7);
+      }
+    }
   }
 
   @media (min-width: variables.$tablet-width) {
