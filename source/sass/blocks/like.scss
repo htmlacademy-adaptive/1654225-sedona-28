@@ -18,8 +18,9 @@
 .like__number {
   font-weight: 700;
   line-height: 21px;
+  position: relative;
 
   @media (min-width: variables.$tablet-width) {
-    padding-top: 23px;
+    margin-top: 23px;
   }
 }

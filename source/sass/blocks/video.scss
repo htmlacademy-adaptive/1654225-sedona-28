@@ -2,7 +2,7 @@
 
 .video {
   @media (max-width: variables.$mobile-width-only) {
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid variables.$darken-grey-color;
   }
 }
 
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 59px 60px 84px;
+    padding: 60px 60px 84px;
   }
 }
 
@@ -37,6 +37,10 @@
       font-size: 30px;
       line-height: 26px;
       margin-bottom: 31px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-bottom: 32px;
     }
   }
 }
