@@ -11,7 +11,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 99px 10px 89px;
+    padding: 98px 10px 88px;
     max-width: 458px;
     margin: 0 auto;
   }
@@ -44,7 +44,7 @@
 
 .gallery__item {
   padding: 24px 20px 26px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid variables.$primary-disabled-color;
   outline-offset: none;
 
   @media (min-width: variables.$tablet-width) {

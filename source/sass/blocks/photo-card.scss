@@ -14,7 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 20px;
-    height: 80px;
+    min-height: 80px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -46,12 +46,17 @@
 
   @media (min-width: variables.$desktop-width) {
     color: variables.$basic-white;
+    margin: 0 0 5px;
   }
 }
 
 .photo-card__author {
   margin: 0 0 11px;
   color: variables.$text-gray;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: variables.$desktop-width) {
     color: variables.$basic-white;
@@ -74,7 +79,7 @@
 
   @media (min-width: variables.$desktop-width) {
     color: variables.$basic-white;
-    margin-top: 27px;
+    margin-top: 28px;
     opacity: 1;
   }
 }
@@ -88,7 +93,7 @@
   object-fit: cover;
 
   @media (min-width: variables.$tablet-width) {
-    height: 267px;
+    height: 266px;
   }
 }
 
@@ -107,6 +112,10 @@
     @media (min-width: variables.$desktop-width) {
       padding-top: 22px;
     }
+  }
+
+  .photo-card__title {
+    margin: 0 0 1px;
   }
 
   .photo-card__description {

@@ -5,18 +5,17 @@
   @include mixins.list-reset;
   display: flex;
   min-width: 156px;
-  justify-content: space-between;
+  max-width: 540px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  column-gap: 6px;
 }
 
 .social__item {
   width: 48px;
   height: 48px;
   display: flex;
-}
-
-.social__link {
-  padding: 12px;
-  box-sizing: border-box;
   background-color: variables.$primary-color;
 
   &:hover,
@@ -29,4 +28,31 @@
     background-color: variables.$primary-active-color;
     color: transparentize(variables.$basic-white, 0.7);
   }
+}
+
+.social__link {
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: variables.$basic-white;
+  width: 48px;
+  height: 48px;
+  mask-size: 24px 24px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  &:active {
+    background-color: transparentize(variables.$basic-white, 0.7);
+  }
+}
+
+.social__link--vk {
+  mask-image: url("../img/sprite.svg#icon-vk");
+}
+
+.social__link--telegram {
+  mask-image: url("../img/sprite.svg#icon-telegram");
+}
+
+.social__link--youtube {
+  mask-image: url("../img/sprite.svg#icon-youtube");
 }
