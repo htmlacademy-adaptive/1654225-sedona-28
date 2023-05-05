@@ -27,25 +27,10 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-// Styles
-/*
-export const stylesSource = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}*/
-
 //HTML
 const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({                  /* Минификация HTML*/
+  .pipe(htmlmin({
      collapseWhitespace: true,
      ignoreCustomFragments: [ /<br\s*[\/]?>|\S/gi ]  /*Не убираем пробел после <br> */
    }))
@@ -89,27 +74,24 @@ const svg = () =>
 
 const config = {
   mode: {
-   // css: true, // Create a «css» sprite
-   // view: true, // Create a «view» sprite
-   // defs: true, // Create a «defs» sprite
-    //symbol: true, // Create a «symbol» sprite
     stack: true // Create a «stack» sprite
   }
 }
 
-/*const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgSprite(config))
-    .pipe(rename('sprite2.svg'))
+    .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
-} */
+}
 
 //Copy
 const copy = (done) => {
   gulp.src([
   'source/fonts/*.{woff2,woff}',
   'source/*.ico',
+  'source/*.webmanifest'
   ], {
   base: 'source'
   })
@@ -161,7 +143,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    //sprite,
+    sprite,
     createWebp
   ),
 );
@@ -176,7 +158,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
-   // sprite,
+    sprite,
     createWebp
   ),
   gulp.series(
