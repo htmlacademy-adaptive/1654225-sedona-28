@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -55,6 +55,9 @@
             <li class="gallery__item photo-card photo-card--first">
               <a class="photo-card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-non-native-spaces-desktop.webp 1x, img/gallery/photo-non-native-spaces-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo-non-native-spaces-tablet.webp 1x, img/gallery/photo-non-native-spaces-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/photo-non-native-spaces.webp 1x, img/gallery/photo-non-native-spaces@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/gallery/photo-non-native-spaces-desktop.jpg 1x, img/gallery/photo-non-native-spaces-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/gallery/photo-non-native-spaces-tablet.jpg 1x, img/gallery/photo-non-native-spaces-tablet@2x.jpg 2x">
                   <img class="photo-card__image"   src="img/gallery/photo-non-native-spaces.jpg" srcset="img/gallery/photo-non-native-spaces@2x.jpg 2x" alt="Красочная дорога в город на фоне заката" width="280" height="280">
@@ -67,7 +70,7 @@
                 </div>
                 <button class="photo-card__likes like" type="button" aria-label="Поставить лайк фотографии">
                   <svg class="like__icon"  aria-hidden="true"  width="23" height="21">
-                    <use xlink:href="img/sprite.svg#like__icon"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="like__number">1350</span>
                 </button>
@@ -76,6 +79,9 @@
             <li class="gallery__item photo-card">
               <a class="photo-card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-local-vegetation-desktop.webp 1x, img/gallery/photo-local-vegetation-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo-local-vegetation-tablet.webp 1x, img/gallery/photo-local-vegetation-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/photo-local-vegetation.webp 1x, img/gallery/photo-local-vegetation@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/gallery/photo-local-vegetation-desktop.jpg 1x, img/gallery/photo-local-vegetation-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/gallery/photo-local-vegetation-tablet.jpg 1x, img/gallery/photo-local-vegetation-tablet@2x.jpg 2x">
                   <img class="photo-card__image"   src="img/gallery/photo-local-vegetation.jpg" srcset="img/gallery/photo-local-vegetation@2x.jpg 2x" alt="Кактус с желтыми соцветиями" width="280" height="280">
@@ -88,7 +94,7 @@
                 </div>
                 <button class="photo-card__likes like" type="button" aria-label="Поставить лайк фотографии">
                   <svg class="like__icon"  aria-hidden="true"  width="23" height="21">
-                    <use xlink:href="img/sprite.svg#like__icon"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="like__number">143</span>
                 </button>
@@ -97,6 +103,9 @@
             <li class="gallery__item photo-card gallery__item--dark">
               <a class="photo-card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-road-north-desktop.webp 1x, img/gallery/photo-road-north-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo-road-north-tablet.webp 1x, img/gallery/photo-road-north-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/photo-road-north.webp 1x, img/gallery/photo-road-north@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/gallery/photo-road-north-desktop.jpg 1x, img/gallery/photo-road-north-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/gallery/photo-road-north-tablet.jpg 1x, img/gallery/photo-road-north-tablet@2x.jpg 2x">
                   <img class="photo-card__image"   src="img/gallery/photo-road-north.jpg" srcset="img/gallery/photo-road-north@2x.jpg 2x"  alt="Извилистая дорога по горе на Север" width="280" height="280">
@@ -109,7 +118,7 @@
                 </div>
                 <button class="photo-card__likes like" type="button" aria-label="Поставить лайк фотографии">
                   <svg class="like__icon"  aria-hidden="true"  width="23" height="21">
-                    <use xlink:href="img/sprite.svg#like__icon"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="like__number">96</span>
                 </button>
@@ -118,6 +127,9 @@
             <li class="gallery__item photo-card">
               <a class="photo-card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-devils-bridge-desktop.webp 1x, img/gallery/photo-devils-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo-devils-bridge-tablet.webp 1x, img/gallery/photo-devils-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/photo-devils-bridge.webp 1x, img/gallery/photo-devils-bridge@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/gallery/photo-devils-bridge-desktop.jpg 1x, img/gallery/photo-devils-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/gallery/photo-devils-bridge-tablet.jpg 1x, img/gallery/photo-devils-bridge-tablet@2x.jpg 2x">
                   <img class="photo-card__image"   src="img/gallery/photo-devils-bridge.jpg" srcset="img/gallery/photo-devils-bridge@2x.jpg 2x" alt="Вид на мост дьявола" width="280" height="280">
@@ -130,7 +142,7 @@
                 </div>
                 <button class="photo-card__likes like" type="button" aria-label="Поставить лайк фотографии">
                   <svg class="like__icon" aria-hidden="true" width="23" height="21">
-                    <use xlink:href="img/sprite.svg#like__icon"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="like__number">254</span>
                 </button>
@@ -148,6 +160,9 @@
           </div>
           <div class="video__item">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video/video-desktop.webp 1x, img/video/video-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/video/video-tablet.webp 1x, img/video/video-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/video/video.webp 1x, img/video/video@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/video/video-desktop.jpg 1x, img/video/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video/video-tablet.jpg 1x, img/video/video-tablet@2x.jpg 2x">
               <img class="video__img"   src="img/video/video.jpg" srcset="img/video/video@2x.jpg 2x" alt="Видео путешествие по городку Седоны" width="280" height="177">

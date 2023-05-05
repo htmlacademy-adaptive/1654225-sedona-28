@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -83,7 +83,7 @@
             </li>
             <li class="services__item  services__item--gift">
               <h3 class="services__title">Сувениры</h3>
-              <p class="services__description">Не только китайского,<br class="br-visible br-visible--desktop"> но и
+              <p class="services__description">Не только китайского, <br class="br-visible br-visible--desktop"> но и
                 местного производства!</p>
             </li>
           </ul>
@@ -93,7 +93,7 @@
             <div class="advantage__section">
               <h3 class="advantage__title">Там есть мост&nbsp;дьявола</h3>
               <span class="advantage__number">— №2 —</span>
-              <p class="advantage__description">Да, по нему можно пройти! <br class="br-visible br-visible--desktop">Если вы
+              <p class="advantage__description">Да, по нему можно пройти! <br class="br-visible br-visible--desktop"> Если вы
                 осмелитесь, конечно</p>
             </div>
             <div class="advantage__image-wrapper">
@@ -142,8 +142,10 @@
         <h2 class="visually-hidden">Седона на карте</h2>
         <div class="map__image map__image--nojs">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/map/map.webp 1x, img/map/map@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
-            <img class="map__photo" src="img/map/map-tablet.jpg" srcset="img/map/map-tablet@2x.jpg 2x" width="320" height="350" alt="Седона на карте">
+            <img class="map__photo" src="img/map/map.jpg" srcset="img/map/map@2x.jpg 2x" width="320" height="350" alt="Седона на карте">
           </picture>
         </div>
         <div class="map__frame map__frame--nojs">
