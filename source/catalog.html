@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона - Фото и видео</title>
+    <meta name="description" content="Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img src="img/main-logo.svg" alt="Логотип городка Sedona">
+        <img src="img/main-logo.svg" width="185" height="96"  alt="Логотип городка Sedona">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -60,7 +63,7 @@
                   <source type="image/webp" srcset="img/gallery/photo-non-native-spaces.webp 1x, img/gallery/photo-non-native-spaces@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/gallery/photo-non-native-spaces-desktop.jpg 1x, img/gallery/photo-non-native-spaces-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/gallery/photo-non-native-spaces-tablet.jpg 1x, img/gallery/photo-non-native-spaces-tablet@2x.jpg 2x">
-                  <img class="photo-card__image"   src="img/gallery/photo-non-native-spaces.jpg" srcset="img/gallery/photo-non-native-spaces@2x.jpg 2x" alt="Красочная дорога в город на фоне заката" width="280" height="280">
+                  <img class="photo-card__image" loading="lazy" src="img/gallery/photo-non-native-spaces.jpg" srcset="img/gallery/photo-non-native-spaces@2x.jpg 2x" alt="Красочная дорога в город на фоне заката" width="280" height="280">
                 </picture>
               </a>
               <div class="photo-card__description">
@@ -84,7 +87,7 @@
                   <source type="image/webp" srcset="img/gallery/photo-local-vegetation.webp 1x, img/gallery/photo-local-vegetation@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/gallery/photo-local-vegetation-desktop.jpg 1x, img/gallery/photo-local-vegetation-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/gallery/photo-local-vegetation-tablet.jpg 1x, img/gallery/photo-local-vegetation-tablet@2x.jpg 2x">
-                  <img class="photo-card__image"   src="img/gallery/photo-local-vegetation.jpg" srcset="img/gallery/photo-local-vegetation@2x.jpg 2x" alt="Кактус с желтыми соцветиями" width="280" height="280">
+                  <img class="photo-card__image" loading="lazy" src="img/gallery/photo-local-vegetation.jpg" srcset="img/gallery/photo-local-vegetation@2x.jpg 2x" alt="Кактус с желтыми соцветиями" width="280" height="280">
                 </picture>
               </a>
               <div class="photo-card__description">
@@ -108,7 +111,7 @@
                   <source type="image/webp" srcset="img/gallery/photo-road-north.webp 1x, img/gallery/photo-road-north@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/gallery/photo-road-north-desktop.jpg 1x, img/gallery/photo-road-north-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/gallery/photo-road-north-tablet.jpg 1x, img/gallery/photo-road-north-tablet@2x.jpg 2x">
-                  <img class="photo-card__image"   src="img/gallery/photo-road-north.jpg" srcset="img/gallery/photo-road-north@2x.jpg 2x"  alt="Извилистая дорога по горе на Север" width="280" height="280">
+                  <img class="photo-card__image" loading="lazy" src="img/gallery/photo-road-north.jpg" srcset="img/gallery/photo-road-north@2x.jpg 2x"  alt="Извилистая дорога по горе на Север" width="280" height="280">
                 </picture>
               </a>
               <div class="photo-card__description">
@@ -132,7 +135,7 @@
                   <source type="image/webp" srcset="img/gallery/photo-devils-bridge.webp 1x, img/gallery/photo-devils-bridge@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/gallery/photo-devils-bridge-desktop.jpg 1x, img/gallery/photo-devils-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/gallery/photo-devils-bridge-tablet.jpg 1x, img/gallery/photo-devils-bridge-tablet@2x.jpg 2x">
-                  <img class="photo-card__image"   src="img/gallery/photo-devils-bridge.jpg" srcset="img/gallery/photo-devils-bridge@2x.jpg 2x" alt="Вид на мост дьявола" width="280" height="280">
+                  <img class="photo-card__image" loading="lazy" src="img/gallery/photo-devils-bridge.jpg" srcset="img/gallery/photo-devils-bridge@2x.jpg 2x" alt="Вид на мост дьявола" width="280" height="280">
                 </picture>
               </a>
               <div class="photo-card__description">
@@ -165,7 +168,7 @@
                   <source type="image/webp" srcset="img/video/video.webp 1x, img/video/video@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/video/video-desktop.jpg 1x, img/video/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video/video-tablet.jpg 1x, img/video/video-tablet@2x.jpg 2x">
-              <img class="video__img"   src="img/video/video.jpg" srcset="img/video/video@2x.jpg 2x" alt="Видео путешествие по городку Седоны" width="280" height="177">
+              <img class="video__img" loading="lazy" src="img/video/video.jpg" srcset="img/video/video@2x.jpg 2x" alt="Видео путешествие по городку Седоны" width="280" height="177">
             </picture>
             <button class="video__icon-play" type="button"><span class="visually-hidden">Посмотреть видео</span></button>
           </div>
