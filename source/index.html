@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <meta name="description" content="СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего! Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!.">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -16,7 +19,7 @@
   <header class="main-header">
 
     <a class="main-header__logo">
-      <img src="img/main-logo.svg" alt="Логотип городка Sedona">
+      <img src="img/main-logo.svg" width="185" height="96"  alt="Логотип городка Sedona">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -68,7 +71,7 @@
                 <source type="image/webp" srcset="img/advanteges/photo-city.webp 1x, img/advanteges/photo-city@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/advanteges/photo-city-desktop.jpg 1x, img/advanteges/photo-city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/advanteges/photo-city-tablet.jpg 1x, img/advanteges/photo-city-tablet@2x.jpg 2x">
-                <img class="advantage__image" src="img/advanteges/photo-city.jpg" srcset="img/advanteges/photo-city@2x.jpg 2x" alt="Вид на город Седона." width="320" height="260">
+                <img class="advantage__image" loading="lazy" src="img/advanteges/photo-city.jpg" srcset="img/advanteges/photo-city@2x.jpg 2x" alt="Вид на город Седона." width="320" height="260">
               </picture>
             </div>
           </div>
@@ -103,7 +106,7 @@
                 <source type="image/webp" srcset="img/advanteges/photo-bridge.webp 1x, img/advanteges/photo-bridge@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/advanteges/photo-bridge-desktop.jpg 1x, img/advanteges/photo-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/advanteges/photo-bridge-tablet.jpg 1x, img/advanteges/photo-bridge-tablet@2x.jpg 2x">
-                <img class="advantage__image" src="img/advanteges/photo-bridge.jpg" srcset="img/advanteges/photo-bridge@2x.jpg 2x" alt="Вид на мост Дьявол." width="320" height="260">
+                <img class="advantage__image" loading="lazy" src="img/advanteges/photo-bridge.jpg" srcset="img/advanteges/photo-bridge@2x.jpg 2x" alt="Вид на мост Дьявол." width="320" height="260">
               </picture>
             </div>
           </div>
@@ -145,7 +148,7 @@
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
             <source type="image/webp" srcset="img/map/map.webp 1x, img/map/map@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
-            <img class="map__photo" src="img/map/map.jpg" srcset="img/map/map@2x.jpg 2x" width="320" height="350" alt="Седона на карте">
+            <img class="map__photo" loading="lazy" src="img/map/map.jpg" srcset="img/map/map@2x.jpg 2x" width="320" height="350" alt="Седона на карте">
           </picture>
         </div>
         <div class="map__frame map__frame--nojs">
