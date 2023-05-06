@@ -32,7 +32,7 @@ const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({
      collapseWhitespace: true,
-     ignoreCustomFragments: [ /<br\s*[\/]?>|\S/gi ]  /*Не убираем пробел после <br> */
+     ignoreCustomFragments: [ /<br\s*[\/]?>|\S/gi ]
    }))
   .pipe(gulp.dest('build'));
 }
