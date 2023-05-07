@@ -127,19 +127,12 @@
       align-items: start;
     }
   }
-  /*.form__legend {
-    @media (min-width: variables.$tablet-width) {
-      max-width: 308px;
-    }
-  }*/
 }
 
 .form__field-group--comment {
   grid-column: 1/-1;
 
   @media (min-width: variables.$tablet-width) {
-    //min-width: 648px;
-    //margin: 0 auto;
     margin-bottom: 41px;
   }
 
@@ -164,7 +157,6 @@
 
 .form__legend {
   width: 100%;
-  //margin-top: 24px;
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
@@ -294,7 +286,8 @@
   &:focus {
     outline: none;
     border: 4px solid variables.$primary-disabled-color;
-    outline-offset: 4px;
+    outline-offset: -4px;
+    padding-left: 12px;
     background-color: variables.$basic-white;
   }
 
@@ -393,9 +386,8 @@
   background-color: variables.$color-field;
 }
 
-.form__radio[type="radio"]:focus + ::before {
-  outline: 4px solid variables.$controls-focus-color;
-  outline-offset: -4px;
+.form__radio[type="radio"]:focus + .form__controls--radio::before {
+  background-color: variables.$primary-disabled-color;
 }
 
 .form__radio:checked + .form__controls--radio::after {
@@ -452,9 +444,8 @@
   background-repeat: no-repeat;
 }
 
-.form__checkbox[type="checkbox"]:focus + ::before {
-  outline: 4px solid variables.$controls-focus-color;
-  outline-offset: -4px;
+.form__checkbox[type="checkbox"]:focus + .form__controls--checkbox::before {
+  background-color: variables.$primary-disabled-color;
 }
 
 .form__checkbox:checked + .form__controls--checkbox:active::after {
@@ -462,7 +453,6 @@
 }
 
 .form__button-wrapper {
-  //padding: 0 20px;
   grid-column: 1/-1;
   width: 280px;
 
@@ -484,7 +474,7 @@
 
 .form__button {
   width: 280px;
-  padding: 16px  0;//20px;
+  padding: 16px  0;
   font-size: 21px;
   line-height: 26px;
   margin-bottom: 3px;

@@ -8,7 +8,7 @@
 
 .video__wrapper {
   @media (min-width: variables.$tablet-width) {
-    padding: 62px 60px 40px;
+    padding: 55px 60px 40px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -23,7 +23,7 @@
 
   @media (min-width: variables.$tablet-width) {
     padding: 0;
-    padding-bottom: 83px;//87px;
+    padding-bottom: 90px;
   }
 
   @media (min-width: variables.$desktop-width) {

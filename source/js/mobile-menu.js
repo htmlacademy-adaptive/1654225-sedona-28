@@ -1,6 +1,5 @@
 const openMenuLink = document.querySelector(".main-nav__toggle");
 const menu = document.querySelector(".main-nav");
-//const modalClose = searchModal.querySelector(".modal-close-button");
 
 menu.classList.remove('main-nav--nojs');
 

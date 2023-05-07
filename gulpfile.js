@@ -74,7 +74,7 @@ const svg = () =>
 
 const config = {
   mode: {
-    stack: true // Create a «stack» sprite
+    stack: true
   }
 }
 
