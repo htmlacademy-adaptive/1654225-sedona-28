@@ -5,19 +5,6 @@
   position: relative;
 }
 
-/*.main-nav__wrapper::after {
-  @media (max-width: variables.$mobile-width-only) {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 7px;
-    left: 0;
-    top: 216px;
-    background: linear-gradient(180deg, transparentize(variables.$basic-black, 1) 0%, transparentize(variables.$basic-black, 0.8) 100%);
-    mix-blend-mode: normal;
-  }
-}*/
-
 .main-nav__toggle {
   position: absolute;
   top: 0;
@@ -158,7 +145,6 @@
   @media (min-width: variables.$tablet-width) {
     box-sizing: border-box;
     width: 20%;
-    //padding: 19px 0 16px;
     text-align: center;
     font-size: 14px;
     line-height: 21px;
