@@ -10,7 +10,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 0 120px 65px;
+    padding: 0 120px 64px;
   }
 }
 
@@ -83,7 +83,7 @@
 
   @media (min-width: variables.$desktop-width) {
     margin-top: 7px;
-    margin-bottom: 77px;
+    margin-bottom: 73px;
   }
 
   .form__list {
@@ -99,7 +99,7 @@
       grid-gap: 28px;
       margin: 0 auto;
       margin-top: 16px;
-      align-items: start;
+      align-items: center;
     }
   }
 }
@@ -123,8 +123,8 @@
       display: grid;
       grid-template-columns: repeat(4, auto);
       grid-gap: 16px 64px;
-      margin: 32px auto 44px;
-      align-items: start;
+      margin: 34px auto 43px;
+      align-items: center;
     }
   }
 }
@@ -305,6 +305,10 @@
   padding-top: 16px;
   margin: 0;
 
+  &:focus {
+    padding-top: 12px;
+  }
+
   @media (min-width: variables.$tablet-width) {
     height: 160px;
     min-width: 648px;
@@ -354,15 +358,15 @@
 }
 
 .form__controls--radio {
-  display: block;
-  padding-top: 9px;
-  padding-bottom: 7px;
-  padding-left: 62px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
 
   @media (min-width: variables.$desktop-width) {
     width: 280px;
     padding-bottom: 0;
+    padding-top: 4px;
   }
 
   &:focus::before,
@@ -377,12 +381,13 @@
 
 .form__controls--radio::before {
   content: "";
-  position: absolute;
-  left: 0;
-  top: -1px;
+  position: static;
+  display: inline-block;
   width: 46px;
   height: 46px;
   border-radius: 50%;
+  margin-right: 16px;
+  flex-shrink: 0;
   background-color: variables.$color-field;
 }
 
@@ -393,7 +398,6 @@
 .form__radio:checked + .form__controls--radio::after {
   content: "";
   position: absolute;
-  top: 13px;
   left: 15px;
   width: 16px;
   height: 16px;
@@ -406,10 +410,9 @@
 }
 
 .form__controls--checkbox {
-  display: block;
-  padding-top: 11px;
-  padding-bottom: 9px;
-  padding-left: 62px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
 
   &:hover::before {
@@ -424,19 +427,19 @@
 
 .form__controls--checkbox::before {
   content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: static;
+  display: inline-block;
   width: 46px;
   height: 46px;
+  margin-right: 16px;
   border-radius: 4px;
+  flex-shrink: 0;
   background-color: variables.$color-field;
 }
 
 .form__checkbox:checked + .form__controls--checkbox::after {
   content: "";
   position: absolute;
-  top: 15px;
   left: 12px;
   width: 22px;
   height: 16px;
